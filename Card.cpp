@@ -1,5 +1,4 @@
 #include "Card.h"
-#include <stdio.h>
 
 int Card::counter = 0;
 
