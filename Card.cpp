@@ -4,8 +4,7 @@ Card::Card()
 {
     static int counter = 0;
     value = counter++;
-    if ( counter > 52 ) 
-        counter = 0;
+    counter %= 52;
 }
 
 char Card::figure()
@@ -18,4 +17,9 @@ char Card::color()
 {
     static char colors[] = "PKTA";
     return colors[value / 13];
+}
+
+Card* Card::deck()
+{
+    return new Card[52];
 }

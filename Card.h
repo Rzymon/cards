@@ -10,4 +10,5 @@ public:
     Card();
     char figure();
     char color();
+    static Card*  deck();
 };
