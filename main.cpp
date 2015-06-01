@@ -3,9 +3,12 @@
 
 int main()
 {
-    printf("Hello, world!\n");
-    Card cards[100];
+    Card cards[52];
+    Card *deck;
 
-    for ( int i = 0 ; i < 100 ; i++ )
-        printf("\t%c:%c\n", cards[i].figure(), cards[i].color());
+    for ( int i = 0 ; i < 52 ; i++ )
+        printf("%c%c\t", cards[i].figure(), cards[i].color());
+
+    printf("\nOto karty były\n");
+
 }

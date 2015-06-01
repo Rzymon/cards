@@ -2,8 +2,6 @@
 #include <stdio.h>
 
 int Card::counter = 0;
-char *Card::colors = "ABCD";
-char *Card::figures = "234567890JQKA";
 
 Card::Card()
 {
@@ -14,10 +12,12 @@ Card::Card()
 
 char Card::figure()
 {
+    static char figures[] = "234567890JQKA";
     return figures[value % 13];
 }
 
 char Card::color()
 {
+    static char colors[] = "PKTA";
     return colors[value / 13];
 }

@@ -3,9 +3,9 @@
 class Card
 {
     static int counter;
+    static char *colors, *figures;
     int value;
-    static char *colors;
-    static char *figures;
+
 public:
     Card();
     char figure();
