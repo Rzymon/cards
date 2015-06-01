@@ -1,9 +1,8 @@
 #include "Card.h"
 
-int Card::counter = 0;
-
 Card::Card()
 {
+    static int counter = 0;
     value = counter++;
     if ( counter > 52 ) 
         counter = 0;
